@@ -10,12 +10,14 @@
     <!-- <link rel="apple-touch-icon" sizes="64x64" href="./assets/img/favicon/touch-icon-iphone.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/touch-icon-iphone.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/touch-icon-iphone.png"> -->
-    <title>Unilever - Главная</title>
+    <title>Unilever - Поиск</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
 
 <body>
     <div class="wrapper">
- 
+
         <header class="header">
             <div class="container --wide">
                 <div class="header__wrapper">
@@ -32,7 +34,7 @@
                         <nav class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item page-text18"><a href="">Каталог</a></li>
-                                <li class="header__nav-item _active page-text18"><a href="">О нас</a></li>
+                                <li class="header__nav-item page-text18 _active"><a href="">О нас</a></li>
                                 <li class="header__nav-item page-text18"><a href="">Материалы</a></li>
                                 <li class="header__nav-item page-text18"><a href="">Где купить</a></li>
                                 <li class="header__nav-item page-text18"><a href="">Контакты</a></li>
@@ -53,9 +55,51 @@
             </div>
         </header>
 
-        <main class="main index-page">
-            <h2 class="page-h2" style="text-align: center;padding: 100px 0 300px;"><a href="/sitemap.html">Карта сайта</a></h2>
-        </main>        
+        <main class="main search-page">
+            <section class="search-section">
+                <div class="container">
+                    <div class="search-section__wrapper">
+                        <div class="search-section__headline">
+                            <form class="search-section__form">
+                                <input type="text" placeholder="поиск..." class="search-section__field">
+                                <button class="search-section__submit"><img src="assets/img/search..svg" alt=""></button>
+                            </form>
+                            <span class="search-section__count page-text18">
+                                Найдено продуктов: <span>0</span>
+                            </span>
+                        </div>
+                        <div class="search-section__wrap">
+                            <img src="assets/img/not-found-2..png" alt="">
+                            <h1 class="search-section__header page-h2">Хм...</h1>
+                            <p class="search-section__text page-text24">
+                                Мы ничего не нашли.<br>
+                                Попробуйте уточнить запрос
+                                <br><br>
+                                Или можно перейти на <a href="">главную</a>
+                            </p>
+                        </div>
+                        <div class="search-section__headline">
+                            <form class="search-section__form">
+                                <input type="text" placeholder="поиск..." class="search-section__field">
+                                <button class="search-section__submit"><img src="assets/img/search..svg" alt=""></button>
+                            </form>
+                            <span class="search-section__count page-text18">
+                                Найдено продуктов: <span>1</span>
+                            </span>
+                        </div>
+                        <div class="search-section__results">
+                            <div class="catalog__item">
+                                <div class="catalog__item-img"><img src="assets/img/catalog-item-1..png" alt=""></div>
+                                <div class="catalog__item-info">
+                                    <h3 class="catalog__item-name">Domestos Professional, профессиональное чистящее средство, дезинфицирующее, для клининга, 5 л</h3>
+                                    <a href="" class="catalog__item-link page-btn">ПОДРОБНЕЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="footer" id="footer">
             <div class="container">
@@ -92,13 +136,11 @@
                                 <li class="footer__nav-item page-text24"><a href="">Карта сайта</a></li>
                                 <li class="footer__nav-item page-text24"><a href="">Часто задаваемые вопросы</a></li>
                                 <li class="footer__nav-item page-text24"><a href="">Правовое уведомление</a></li>
-                                <li class="footer__nav-item page-text24"><a href="">Политика об обработке персональных данных</a></li>
-                                <li class="footer__nav-item page-text24"><a href="">Информация в отношении cookie-файлов</a></li>
+                                <li class="footer__nav-item page-text24"><a href="">Политика об обработке персональных
+                                        данных</a></li>
+                                <li class="footer__nav-item page-text24"><a href="">Информация в отношении
+                                        cookie-файлов</a></li>
                                 <li class="footer__nav-item page-text24"><a href="">Правила использования</a></li>
-                            </ul>
-                            <ul class="footer__nav-mob">
-                                <li class="footer__nav-item page-text24"><a href="">Политика об обработке персональных данных</a></li>
-                                <li class="footer__nav-item page-text24"><a href="">Информация в отношении cookie-файлов</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -109,4 +151,4 @@
     </div>
 </body>
 
-</html>
+</html>            
